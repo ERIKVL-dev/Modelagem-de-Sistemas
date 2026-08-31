@@ -10,27 +10,27 @@ public class atvdd14qts {
         int opcaoSelecionada = sc.nextInt();
 
         switch (opcaoSelecionada) {
-            case 1 -> executarAtividade1();
-            case 2 -> executarAtividade2();
-            case 3 -> executarAtividade3();
-            case 4 -> executarAtividade4();
-            case 5 -> executarAtividade5();
-            case 6 -> executarAtividade6();
-            case 7 -> executarAtividade7();
-            case 8 -> executarAtividade8();
-            case 9 -> executarAtividade9();
-            case 10 -> executarAtividade10();
-            case 11 -> executarAtividade11();
-            case 12 -> executarAtividade12();
-            case 13 -> executarAtividade13();
-            case 14 -> executarAtividade14();
+            case 1 -> Questao1();
+            case 2 -> Questao2();
+            case 3 -> Questao3();
+            case 4 -> Questao4();
+            case 5 -> Questao5();
+            case 6 -> Questao6();
+            case 7 -> Questao7();
+            case 8 -> Questao8();
+            case 9 -> Questao9();
+            case 10 -> Questao10();
+            case 11 -> Questao11();
+            case 12 -> Questao12();
+            case 13 -> Questao13();
+            case 14 -> Questao14();
             default -> System.out.println("Opção inválida! Escolha entre 1 e 14.");
         }
         sc.close();
     }
 
-    // Bloco 1
-    public static void executarAtividade1() {
+    
+    public static void Questao1() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Digite o primeiro número: ");
         int num1 = sc.nextInt();
@@ -46,7 +46,7 @@ public class atvdd14qts {
         }
     }
 
-    public static void executarAtividade2() {
+    public static void Questao2() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Digite o primeiro número: ");
         int num1 = sc.nextInt();
@@ -57,7 +57,7 @@ public class atvdd14qts {
         System.out.println("A média dos dois números é: " + media);
     }
 
-    public static void executarAtividade3() {
+    public static void Questao3() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Digite um número: ");
         int num = sc.nextInt();
@@ -69,14 +69,14 @@ public class atvdd14qts {
         }
     }
 
-    public static void executarAtividade4() {
+    public static void Questao4() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Digite o ano de seu nascimento: ");
         int ano = sc.nextInt();
         System.out.println("Sua idade é: " + (2026 - ano) + " anos.");
     }
 
-    public static void executarAtividade5() {
+    public static void Questao5() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Digite um número inteiro: ");
         int num = sc.nextInt();
@@ -84,8 +84,7 @@ public class atvdd14qts {
         System.out.println("Sucessor: " + (num + 1));
     }
 
-    // Bloco 2
-    public static void executarAtividade6() {
+    public static void Questao6() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Digite o nome do aluno: ");
         String nome = sc.nextLine();
@@ -106,7 +105,7 @@ public class atvdd14qts {
         }
     }
 
-    public static void executarAtividade7() {
+    public static void Questao7() {
         Scanner sc = new Scanner(System.in);
         String[] nomes = new String[20];
         double[] medias = new double[20];
@@ -134,7 +133,7 @@ public class atvdd14qts {
         }
     }
 
-    public static void executarAtividade8() {
+    public static void Questao8() {
         Scanner sc = new Scanner(System.in);
         int contadorNoIntervalo = 0;
 
@@ -150,7 +149,7 @@ public class atvdd14qts {
         System.out.println("Total de números no intervalo [10, 150]: " + contadorNoIntervalo);
     }
 
-    public static void executarAtividade9() {
+    public static void Questao9() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Nome do vendedor: ");
         String nome = sc.nextLine();
@@ -169,8 +168,7 @@ public class atvdd14qts {
         System.out.printf("Salário Final: R$ %.2f\n", salarioFinal);
     }
 
-    // Bloco 3
-    public static void executarAtividade10() {
+    public static void Questao10() {
         Scanner sc = new Scanner(System.in);
         int pares = 0, impares = 0;
 
@@ -189,7 +187,7 @@ public class atvdd14qts {
         System.out.println("Quantidade de ímpares: " + impares);
     }
 
-    public static void executarAtividade11() {
+    public static void Questao11() {
         Scanner sc = new Scanner(System.in);
         int somaPares = 0;
         int somaImpares = 0;
@@ -216,7 +214,7 @@ public class atvdd14qts {
         }
     }
 
-    public static void executarAtividade12() {
+    public static void Questao12() {
         Scanner sc = new Scanner(System.in);
         int somaPositivos = 0;
         int qtdNegativos = 0;
@@ -236,7 +234,7 @@ public class atvdd14qts {
         System.out.println("b) Quantidade de valores negativos: " + qtdNegativos);
     }
 
-    public static void executarAtividade13() {
+    public static void Questao13() {
         int somaPares = 0;
 
         System.out.println("Números pares entre 85 e 907:");
@@ -250,14 +248,14 @@ public class atvdd14qts {
         System.out.println("\n\nSoma acumulada de todos os pares: " + somaPares);
     }
 
-    public static void executarAtividade14() {
+    public static void Questao14() {
         Scanner sc = new Scanner(System.in);
 
         String nomeMaisPesada = "";
-        double maiorPeso = -1;
+        double Mpeso = -1;
 
         String nomeMaisAlta = "";
-        double maiorAltura = -1;
+        double Maltura = -1;
 
         for (int i = 1; i <= 20; i++) {
             System.out.println("\n--- Pessoa " + i + " ---");
@@ -267,21 +265,21 @@ public class atvdd14qts {
             double altura = sc.nextDouble();
             System.out.print("Peso (kg): ");
             double peso = sc.nextDouble();
-            sc.nextLine(); // Limpar buffer do scanner
+            sc.nextLine(); 
 
-            if (peso > maiorPeso) {
-                maiorPeso = peso;
+            if (peso > Mpeso) {
+            	Mpeso = peso;
                 nomeMaisPesada = nome;
             }
 
-            if (altura > maiorAltura) {
-                maiorAltura = altura;
+            if (altura > Maltura) {
+                Maltura = altura;
                 nomeMaisAlta = nome;
             }
         }
 
         System.out.println("\n=== RESULTADO DA ANÁLISE FÍSICA ===");
-        System.out.printf("Pessoa mais pesada: %s com %.2f kg\n", nomeMaisPesada, maiorPeso);
-        System.out.printf("Pessoa mais alta: %s com %.2f m\n", nomeMaisAlta, maiorAltura);
+        System.out.printf("Pessoa mais pesada: %s com %.2f kg\n", nomeMaisPesada, Mpeso);
+        System.out.printf("Pessoa mais alta: %s com %.2f m\n", nomeMaisAlta, Maltura);
     }
 }
