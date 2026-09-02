@@ -1,64 +1,40 @@
 package atividade;
 
-public class Computador {
-    private String marca;
-    private String cor;
-    private String modelo;
-    private double valor;
-    private Monitor monitor;
+public class Monitor {
+    private int tamanho;
+    private String tipoTela;
+    private double preco;
 
-    public Computador() {
+    public Monitor() {
     }
 
-    public Computador(String marca, String cor, String modelo, double valor, Monitor monitor) {
-        this.marca = marca;
-        this.cor = cor;
-        this.modelo = modelo;
-        this.valor = valor;
-        this.monitor = monitor;
+    public Monitor(int tamanho, String tipoTela, double preco) {
+        this.tamanho = tamanho;
+        this.tipoTela = tipoTela;
+        this.preco = preco;
     }
 
-    public String getMarca() {
-        return marca;
+    public int getTamanho() {
+        return tamanho;
     }
 
-    public void setMarca(String marca) {
-        this.marca = marca;
+    public void setTamanho(int tamanho) {
+        this.tamanho = tamanho;
     }
 
-    public String getCor() {
-        return cor;
+    public String getTipoTela() {
+        return tipoTela;
     }
 
-    public void setCor(String cor) {
-        this.cor = cor;
+    public void setTipoTela(String tipoTela) {
+        this.tipoTela = tipoTela;
     }
 
-    public String getModelo() {
-        return modelo;
+    public double getPreco() {
+        return preco;
     }
 
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
-    }
-
-    public double getValor() {
-        return valor;
-    }
-
-    public void setValor(double valor) {
-        this.valor = valor;
-    }
-
-    public Monitor getMonitor() {
-        return monitor;
-    }
-
-    public void setMonitor(Monitor monitor) {
-        this.monitor = monitor;
-    }
-
-    public double calcularValorTotal() {
-        return valor + monitor.getPreco();
+    public void setPreco(double preco) {
+        this.preco = preco;
     }
 }
